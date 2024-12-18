@@ -27,4 +27,18 @@ public class GameTests
         string winner = game.CheckWinner(board);  
         Assert.Equal("X", winner);  // 'X' should win
     }
+    
+    [Fact]
+    public void Should_InitializeGame_WithTwoBots()
+    {
+        var game = new Game();
+        game.StartGame();  // Assume we have a StartGame method
+
+        var player1 = game.Player1;
+        var player2 = game.Player2;
+
+        Assert.NotNull(player1);
+        Assert.NotNull(player2);
+        Assert.NotEqual(player1.Name, player2.Name); 
+    }
 }
