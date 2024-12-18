@@ -5,7 +5,12 @@ public class Game
     public char CurrentTurn { get; private set; } = 'X';
     public Player Player1 { get; set; }
     public Player Player2 { get; set; }
+    public Board Board { get; private set; } 
     
+    public Game()
+    {
+        Board = new Board();
+    }
 
     public void MakeMove(int row, int col)
     {

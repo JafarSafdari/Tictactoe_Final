@@ -41,4 +41,19 @@ public class GameTests
         Assert.NotNull(player2);
         Assert.NotEqual(player1.Name, player2.Name); 
     }
+    
+    [Fact]
+    public void Should_MakeRandomMove_WhenBotPlays()
+    {
+        var game = new Game();
+        game.StartGame();
+
+        var initialMove = game.Board.GetCell(0, 0);  
+
+        game.Player1.MakeRandomMove(game.Board);
+        
+        var newMove = game.Board.GetCell(0, 0);
+        
+        Assert.NotEqual(initialMove, newMove);
+    }
 }
