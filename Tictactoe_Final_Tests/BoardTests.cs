@@ -1,31 +1,35 @@
 ﻿using Tictactoe_Final;
 
-namespace Tictactoe_Final_Tests;
-
-public class BoardTests
+namespace Tictactoe_Final_Tests
 {
-    [Fact]
-    public void Should_InitializeBoard_Empty()
+    public class BoardTests
     {
-        var isEmpty = Board.IsEmpty(); 
+        [Fact]
+        public void Should_InitializeBoard_Empty()
+        {
+            var board = new Board(); 
+            var isEmpty = board.IsEmpty(); 
     
-        Assert.True(isEmpty);
-    }
+            Assert.True(isEmpty);
+        }
     
-    [Fact]
-    public void Should_PlaceMarker_InEmptyCell()
-    {
-        Board.PlaceMarker(0, 0, 'X');  
+        [Fact]
+        public void Should_PlaceMarker_InEmptyCell()
+        {
+            var board = new Board();
+            board.PlaceMarker(0, 0, 'X');  
         
-        Assert.Equal('X', Board.GetCell(0, 0)); 
-    }
+            Assert.Equal('X', board.GetCell(0, 0)); 
+        }
     
-    [Fact]
-    public void Should_NotPlaceMarker_InOccupiedCell()
-    {
-        Board.PlaceMarker(0, 0, 'X');  
-        Board.PlaceMarker(0, 0, 'O');  
+        [Fact]
+        public void Should_NotPlaceMarker_InOccupiedCell()
+        {
+            var board = new Board(); 
+            board.PlaceMarker(0, 0, 'X');  
+            board.PlaceMarker(0, 0, 'O');  
 
-        Assert.Equal('X', Board.GetCell(0, 0));  
+            Assert.Equal('X', board.GetCell(0, 0));  
+        }
     }
 }

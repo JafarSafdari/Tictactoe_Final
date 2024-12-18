@@ -1,10 +1,10 @@
 ﻿namespace Tictactoe_Final
 {
-    public static class Board
+    public class Board
     {
-        private static char[,] cells = new char[3, 3];
-        
-        static Board()  
+        private char[,] cells = new char[3, 3];
+
+        public Board()  
         {
             for (int i = 0; i < 3; i++)
             {
@@ -15,7 +15,7 @@
             }
         }
 
-        public static bool IsEmpty()
+        public bool IsEmpty()
         {
             foreach (var cell in cells)
             {
@@ -24,7 +24,8 @@
             }
             return true;
         }
-        public static void PlaceMarker(int row, int col, char marker)
+
+        public void PlaceMarker(int row, int col, char marker)
         {
             if (cells[row, col] == ' ')  
             {
@@ -32,7 +33,7 @@
             }
         }
 
-        public static char GetCell(int row, int col)
+        public char GetCell(int row, int col)
         {
             return cells[row, col];
         }

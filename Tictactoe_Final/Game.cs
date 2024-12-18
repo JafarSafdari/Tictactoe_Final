@@ -9,4 +9,9 @@ public class Game
      
         CurrentTurn = CurrentTurn == 'X' ? 'O' : 'X';
     }
+
+    public string CheckWinner(Board board)
+    {
+        throw new NotImplementedException();
+    }
 }
