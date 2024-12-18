@@ -24,15 +24,17 @@
             }
             return true;
         }
-
-        public static void PlaceMarker(int i, int i1, char c)
+        public static void PlaceMarker(int row, int col, char marker)
         {
-            throw new NotImplementedException();
+            if (cells[row, col] == ' ')  
+            {
+                cells[row, col] = marker;
+            }
         }
 
-        public static char GetCell(int i, int i1)
+        public static char GetCell(int row, int col)
         {
-            throw new NotImplementedException();
+            return cells[row, col];
         }
     }
 }
