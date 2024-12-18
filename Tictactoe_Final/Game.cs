@@ -12,6 +12,10 @@ public class Game
 
     public string CheckWinner(Board board)
     {
-        throw new NotImplementedException();
+        if (board.GetCell(0, 0) == board.GetCell(0, 1) && board.GetCell(0, 1) == board.GetCell(0, 2) && board.GetCell(0, 0) != ' ')
+        {
+            return board.GetCell(0, 0).ToString();
+        }
+        return null;
     }
 }
