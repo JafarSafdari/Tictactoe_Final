@@ -24,5 +24,15 @@
             }
             return true;
         }
+
+        public static void PlaceMarker(int i, int i1, char c)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static char GetCell(int i, int i1)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
