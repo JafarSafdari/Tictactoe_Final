@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Tictactoe_Final/1.0.0": {
+        "runtime": {
+          "Tictactoe_Final.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tictactoe_Final/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

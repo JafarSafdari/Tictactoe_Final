@@ -1,0 +1,14 @@
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\bin\Debug\net9.0\Tictactoe_Final.exe
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\bin\Debug\net9.0\Tictactoe_Final.deps.json
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\bin\Debug\net9.0\Tictactoe_Final.runtimeconfig.json
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\bin\Debug\net9.0\Tictactoe_Final.dll
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\bin\Debug\net9.0\Tictactoe_Final.pdb
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\Tictactoe_Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\Tictactoe_Final.AssemblyInfoInputs.cache
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\Tictactoe_Final.AssemblyInfo.cs
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\Tictactoe_Final.csproj.CoreCompileInputs.cache
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\Tictactoe_Final.dll
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\refint\Tictactoe_Final.dll
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\Tictactoe_Final.pdb
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\Tictactoe_Final.genruntimeconfig.cache
+C:\Repos\MyRepo\Tictactoe_Final\Tictactoe_Final\obj\Debug\net9.0\ref\Tictactoe_Final.dll
