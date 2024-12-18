@@ -19,4 +19,13 @@ public class BoardTests
         
         Assert.Equal('X', Board.GetCell(0, 0)); 
     }
+    
+    [Fact]
+    public void Should_NotPlaceMarker_InOccupiedCell()
+    {
+        Board.PlaceMarker(0, 0, 'X');  
+        Board.PlaceMarker(0, 0, 'O');  
+
+        Assert.Equal('X', Board.GetCell(0, 0));  
+    }
 }
