@@ -1,16 +1,28 @@
-﻿namespace Tictactoe_Final;
-
-public static class Board
+﻿namespace Tictactoe_Final
 {
-    private static char[,] cells = new char[3, 3];
-    
-    public static bool IsEmpty()
+    public static class Board
     {
-        foreach (var cell in cells)
+        private static char[,] cells = new char[3, 3];
+        
+        static Board()  
         {
-            if (cell != ' ') // If any cell is not empty
-                return false;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    cells[i, j] = ' '; 
+                }
+            }
         }
-        return true;
+
+        public static bool IsEmpty()
+        {
+            foreach (var cell in cells)
+            {
+                if (cell != ' ') 
+                    return false;
+            }
+            return true;
+        }
     }
 }
