@@ -5,6 +5,7 @@ public class Game
     public char CurrentTurn { get; private set; } = 'X';
     public Player Player1 { get; set; }
     public Player Player2 { get; set; }
+    
 
     public void MakeMove(int row, int col)
     {
@@ -23,6 +24,8 @@ public class Game
 
     public void StartGame()
     {
-        throw new NotImplementedException();
+        Player1 = new Player("Bot1", 'X');
+        Player2 = new Player("Bot2", 'O');
+        CurrentTurn = Player1.Marker;
     }
 }

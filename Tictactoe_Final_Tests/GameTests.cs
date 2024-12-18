@@ -25,14 +25,14 @@ public class GameTests
         board.PlaceMarker(0, 2, 'X'); 
     
         string winner = game.CheckWinner(board);  
-        Assert.Equal("X", winner);  // 'X' should win
+        Assert.Equal("X", winner);  
     }
     
     [Fact]
     public void Should_InitializeGame_WithTwoBots()
     {
         var game = new Game();
-        game.StartGame();  // Assume we have a StartGame method
+        game.StartGame();  
 
         var player1 = game.Player1;
         var player2 = game.Player2;
