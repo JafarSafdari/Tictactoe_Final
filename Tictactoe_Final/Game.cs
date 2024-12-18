@@ -2,10 +2,11 @@
 
 public class Game
 {
-    public char CurrentTurn { get; set; }
+    public char CurrentTurn { get; private set; } = 'X';  
 
-    public void MakeMove(int i, int i1)
+    public void MakeMove(int row, int col)
     {
-        throw new NotImplementedException();
+     
+        CurrentTurn = CurrentTurn == 'X' ? 'O' : 'X';
     }
 }
